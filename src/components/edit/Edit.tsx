@@ -9,7 +9,7 @@ const Edit: React.FC = () => {
             <h2 className="text-center mb-4 font-weight-bold">Edit User</h2>
             <form>
               <div className="form-group">
-                <label htmlFor="">First Name</label>
+                <label htmlFor="firstname">First Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -17,7 +17,7 @@ const Edit: React.FC = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Last Name</label>
+                <label htmlFor="lastname">Last Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -25,7 +25,7 @@ const Edit: React.FC = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Organization</label>
+                <label htmlFor="organization">Organization</label>
                 <input
                   type="text"
                   className="form-control"
@@ -33,7 +33,7 @@ const Edit: React.FC = () => {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Aditional Organization</label>
+                <label htmlFor="aditional">Aditional Organization</label>
                 <input
                   type="text"
                   className="form-control"

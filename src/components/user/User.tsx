@@ -1,6 +1,10 @@
 import React from 'react';
+import { useCustomSelector, useCustomDispatch } from 'hooks/redux';
 
 const User: React.FC = () => {
+  const { users } = useCustomSelector((state) => state);
+  const dispatch = useCustomDispatch();
+
   return (
     <div className="row justify-content-center">
       <div className="col-md-8">
@@ -9,33 +13,37 @@ const User: React.FC = () => {
             <h2 className="text-center mb-4 font-weight-bold">Add New User</h2>
             <form>
               <div className="form-group">
-                <label htmlFor="">First Name</label>
+                <label htmlFor="fistname">First Name</label>
                 <input
                   type="text"
+                  id="firstname"
                   className="form-control"
                   placeholder="First Name"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Last Name</label>
+                <label htmlFor="lastname">Last Name</label>
                 <input
                   type="text"
+                  id="lastname"
                   className="form-control"
                   placeholder="Last Name"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Organization</label>
+                <label htmlFor="organization">Organization</label>
                 <input
                   type="text"
+                  id="organization"
                   className="form-control"
                   placeholder="Organization"
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="">Aditional Organization</label>
+                <label htmlFor="aditional">Aditional Organization</label>
                 <input
                   type="text"
+                  id="aditional"
                   className="form-control"
                   placeholder="Aditional Organization"
                 />
