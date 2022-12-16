@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Edit from './components/edit/Edit';
-import Header from './components/header/Header';
-import User from './components/user/User';
-import Users from './components/users/Users';
+import Edit from 'components/edit';
+import Header from 'components/header';
+import User from 'components/user';
+import Users from 'components/users';
 
 
 function App() {
