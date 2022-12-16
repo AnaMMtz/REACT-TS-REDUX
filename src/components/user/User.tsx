@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const User = () => {
+const User: React.FC = () => {
   return (
     <div className="row justify-content-center">
       <div className="col-md-8">
@@ -10,30 +10,34 @@ const User = () => {
             <form>
               <div className="form-group">
                 <label htmlFor="">First Name</label>
-                <input type="text"
-                       className="form-control"
-                       placeholder="First Name"
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="First Name"
                 />
               </div>
               <div className="form-group">
                 <label htmlFor="">Last Name</label>
-                <input type="text"
-                       className="form-control"
-                       placeholder="Last Name"
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Last Name"
                 />
               </div>
               <div className="form-group">
                 <label htmlFor="">Organization</label>
-                <input type="text"
-                       className="form-control"
-                       placeholder="Organization"
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Organization"
                 />
               </div>
               <div className="form-group">
                 <label htmlFor="">Aditional Organization</label>
-                <input type="text"
-                       className="form-control"
-                       placeholder="Aditional Organization"
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Aditional Organization"
                 />
               </div>
               <div className="form-group">
@@ -44,15 +48,18 @@ const User = () => {
                   <option value="India">India</option>
                 </select>
               </div>
-              <button type="submit"
-                      className="btn btn-secondary font-weight-bold text-uppercase d-block w-100"
-              >Add User</button>
+              <button
+                type="submit"
+                className="btn btn-secondary font-weight-bold text-uppercase d-block w-100"
+              >
+                Add User
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default User
+export default User;

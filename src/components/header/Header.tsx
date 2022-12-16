@@ -1,26 +1,35 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <>
-    <nav className="" style={{display: "flex", flexDirection:"row", justifyContent:"space-around"}}>
+      <nav
+        className=""
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around'
+        }}
+      >
         <div>
-            <h1>
-                <Link to={"/"} style={{textDecoration:"none"}}>
-                    ATSM USERS
-                </Link>
-            </h1>
+          <h1>
+            <Link to={'/'} style={{ textDecoration: 'none' }}>
+              ATSM USERS
+            </Link>
+          </h1>
         </div>
 
-        <Link to={"/user"} className='' style={{textDecoration:"none", marginTop:"20px"}}>
-            New User &#43;
+        <Link
+          to={'/user'}
+          className=""
+          style={{ textDecoration: 'none', marginTop: '20px' }}
+        >
+          New User &#43;
         </Link>
-    </nav>
-
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Users = () => {
+const Users: React.FC = () => {
   return (
     <>
       <h2 className="text-center my-5">All Users</h2>
@@ -12,12 +12,10 @@ const Users = () => {
             <th scope="col">Actions</th>
           </tr>
         </thead>
-        <tbody>
-          
-        </tbody>
+        <tbody></tbody>
       </table>
     </>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;

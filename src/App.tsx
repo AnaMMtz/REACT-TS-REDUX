@@ -5,20 +5,19 @@ import Header from 'components/header';
 import User from 'components/user';
 import Users from 'components/users';
 
-
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
-      <Header/>
-      <div className='container mt-5'>
+      <Header />
+      <div className="container mt-5">
         <Routes>
-          <Route path='/' element={<Users/>}/>
-          <Route path='/user' element={<User/>}/>
-          <Route path='/user/edit/:id' element={<Edit/>}/>
+          <Route path="/" element={<Users />} />
+          <Route path="/user" element={<User />} />
+          <Route path="/user/edit/:id" element={<Edit />} />
         </Routes>
       </div>
     </Router>
   );
-}
+};
 
 export default App;
